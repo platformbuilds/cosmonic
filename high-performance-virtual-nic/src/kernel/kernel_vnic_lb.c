@@ -13,17 +13,18 @@
 #include <sys/socket.h>
 #include <sys/ioctl.h>
 #include <arpa/inet.h>
-#include <linux/if.h>
 #include <linux/if_packet.h>
 #include <linux/if_ether.h>
 #include <linux/ip.h>
 #include <linux/tcp.h>
-#include <net/if.h>
 #include <ifaddrs.h>
 #include <pthread.h>
 #include <poll.h>
 #include <sys/mman.h>
 #include <time.h>
+
+// Use net/if.h for interface functions, avoid linux/if.h conflict
+#include <net/if.h>
 
 // Optional eBPF support
 #ifdef HAVE_LIBBPF
