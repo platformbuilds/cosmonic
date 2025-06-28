@@ -107,9 +107,6 @@ The DPDK Virtual NIC consists of:
 - **Sub-millisecond failover** times
 - **CPU efficiency** with dedicated packet processing cores
 
-## 📜 License
-
-MIT License - see LICENSE file for details.
 
 ## 🤝 Contributing
 

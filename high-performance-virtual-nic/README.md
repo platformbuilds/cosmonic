@@ -179,10 +179,6 @@ sudo ./tests/failover-test.sh
 5. Push: `git push origin feature/amazing-feature`
 6. Submit pull request
 
-## 📜 License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
 ---
 
 ## 🎯 Why This Solution?

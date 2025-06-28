@@ -93,9 +93,6 @@ sudo ./examples/basic-setup.sh
 - Architecture: `docs/architecture.md`
 - Performance Guide: `docs/performance.md`
 
-## 📜 License
-
-MIT License - see LICENSE file for details.
 
 ## 🤝 Contributing
 
