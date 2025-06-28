@@ -1,0 +1,17 @@
+[Unit]
+Description=DPDK Virtual NIC %i
+After=network.target
+Requires=hugepages.service
+
+[Service]
+Type=forking
+ExecStartPre=/usr/local/bin/setup-vnic-env.sh
+ExecStart=/usr/local/bin/dpdk-vnic-tool -l 0-3 --socket-mem 2048 -- create %i 0,1 --jumbo
+ExecStartPost=/usr/local/bin/configure-vnic.sh %i
+ExecStop=/usr/local/bin/dpdk-vnic-tool -l 0-3 --socket-mem 2048 -- delete %i
+Restart=on-failure
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,62 @@
+# Build directories
+build/
+*.o
+*.so
+*.a
+
+# DPDK build artifacts
+.build/
+*.gcda
+*.gcno
+
+# Editor files
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Core dumps
+core
+core.*
+
+# Hugepage mounts
+/mnt/huge/*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Backup files
+*.bak
+*.backup
+
+# Distribution files
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+
+# IDE files
+*.user
+*.suo
+*.vcxproj
+*.vcxproj.filters
+
+# Local configuration
+config.local
+*.local
