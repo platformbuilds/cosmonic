@@ -178,3 +178,12 @@ help:
 	@echo "  1. make check-deps    # Check what's needed"
 	@echo "  2. make               # Build everything"
 	@echo "  3. make demo          # Try it out"
+
+fix-tests: fix-headers
+	@echo "🔧 Fixing test environment..."
+	@if [ -f scripts/fix-test-issues.sh ]; then \
+		sudo ./scripts/fix-test-issues.sh; \
+	fi
+
+test-with-fixes: fix-tests test
+	@echo "✅ Tests completed with auto-fixes applied"
