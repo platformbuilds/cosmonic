@@ -1,0 +1,31 @@
+# Build artifacts
+build/
+*.o
+*.so
+*.a
+
+# Editor files
+*~
+*.swp
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+logs/
+
+# Benchmark results
+benchmark_results_*.txt
+
+# Test artifacts
+test_*.tmp
+core
+
+# DPDK artifacts
+.build/
+*.gcda
+*.gcno
